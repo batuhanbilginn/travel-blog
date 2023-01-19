@@ -13,6 +13,7 @@ export enum Platforms {
   Twitter = "twitter",
   Youtube = "youtube",
   Linkedin = "linkedin",
+  Whatsapp = "whatsapp",
 }
 
 interface SocialLinkProps {

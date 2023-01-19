@@ -14,10 +14,10 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-
       <body>
         <Navbar />
-        {children}
+        {/* Padding for Navbar */}
+        <div className="mt-20 pb-20">{children}</div>
         <Footer />
       </body>
     </html>
