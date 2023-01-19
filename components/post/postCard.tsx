@@ -25,13 +25,15 @@ const PostCard = ({
     >
       {/* Image */}
       <Image
-        className={`rounded-md w-full object-cover object-center h-auto max-h-[300px] ${
+        className={`rounded-md w-full object-cover object-center h-auto max-h-[300px] bg-neutral-100 ${
           reverse ? " md:order-last " : ""
         }}`}
         width={600}
         height={400}
         alt={post.title}
         src={post.image}
+        blurDataURL={post.image + "?key=blur-image"}
+        placeholder="blur"
       />
       {/* Content */}
       <div>

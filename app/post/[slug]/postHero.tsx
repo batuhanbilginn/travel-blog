@@ -10,11 +10,13 @@ const PostHero = ({ post }: PostHeroProps) => {
     <div className="@container">
       <PostCardContent post={post} />
       <Image
-        className="w-full h-auto mt-10 max-h-[300px] md:max-h-[500px] object-cover object-center rounded-md"
+        className="w-full h-auto mt-10 max-h-[300px] bg-neutral-100 md:max-h-[500px] object-cover object-center rounded-md"
         width={1280}
         height={628}
         src={post.image}
         alt={post.title}
+        placeholder="blur"
+        blurDataURL={post.image + "?key=blur-image"}
       />
     </div>
   );
