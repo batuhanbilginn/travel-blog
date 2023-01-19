@@ -6,8 +6,6 @@ import { notFound } from "next/navigation";
 import PostBody from "./postBody";
 import PostHero from "./postHero";
 
-export const revalidate = 10;
-
 export async function generateStaticParams() {
   const posts = await getAllPosts();
 
