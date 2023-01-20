@@ -13,7 +13,7 @@ export default async function Home() {
   return (
     <div className="">
       <PaddingContainer>
-        <main className="pt-10 space-y-10">
+        <main className="space-y-10">
           <PostCard direction="horizontal" post={posts[0]} />
           <PostCardList posts={[posts[1], posts[2]]} />
           {/* CTA */}

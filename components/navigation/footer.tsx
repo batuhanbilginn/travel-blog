@@ -16,7 +16,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="py-8 border-t border-t-neutral-200">
+    <footer className="py-8 border-t @container border-t-neutral-200">
       <PaddingContainer>
         {/* Footer Top Container */}
         <div>
@@ -51,11 +51,11 @@ const Footer = () => {
           </div>
         </div>
         {/* Bottom Container */}
-        <div className="flex items-center justify-between mt-10 pt-5 border-t border-t-neutral-100 text-sm">
+        <div className="flex items-center justify-between flex-wrap gap-4  @md:flex-nowrap mt-10 pt-5 border-t border-t-neutral-100 text-sm">
           <div>
             All rights are reserved | Copyright {new Date().getFullYear()}
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center whitespace-nowrap">
             <div>Made with</div>
             <HiHeart />
             <div>in Istanbul</div>

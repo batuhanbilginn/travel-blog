@@ -4,12 +4,13 @@ import { Post } from "@/types/database";
 
 interface PostCardContentProps {
   post: Post;
+  isPostHero?: boolean;
 }
-const PostCardContent = ({ post }: PostCardContentProps) => {
+const PostCardContent = ({ post, isPostHero }: PostCardContentProps) => {
   return (
     <div className="space-y-2">
       {/* Tags */}
-      <div className="flex items-center gap-1 @md:gap-2  text-xs @md:text-sm text-neutral-500">
+      <div className="flex flex-wrap @md:flex-nowrap items-center gap-1 @md:gap-2  text-xs @md:text-sm text-neutral-500">
         <div
           className={`font-medium ${
             post.category.title === "Cities"
@@ -27,7 +28,11 @@ const PostCardContent = ({ post }: PostCardContentProps) => {
         <div>{getRelativeDate(post.date_created)}</div>
       </div>
       {/* Title */}
-      <h1 className="font-semibold text-xl @md:text-2xl @lg:text-3xl ">
+      <h1
+        className={`font-semibold ${
+          isPostHero ? "text-4xl" : "text-xl @md:text-2xl @lg:text-3xl"
+        }`}
+      >
         {post.title}
       </h1>
       {/* Description */}

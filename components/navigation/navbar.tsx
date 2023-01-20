@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <Popup />
-      <div className="fixed top-0 left-0 right-0 z-50 bg-white/70">
+      <div className="fixed @container top-0 left-0 right-0 z-50 bg-white/70">
         <PaddingContainer>
           {/* Navbar Container */}
           <div className="flex justify-between items-center py-4 border-b border-b-white backdrop-blur-md">
@@ -28,7 +28,9 @@ const Navbar = () => {
               >
                 Experiences
               </Link>
-              <PrimaryButton title="Sign Up" />
+              <div className="hidden @sm:block">
+                <PrimaryButton title="Sign Up" />
+              </div>
             </div>
           </div>
         </PaddingContainer>

@@ -68,7 +68,7 @@ const Popup = () => {
       {/* Close Container */}
       <div onClick={closePopup} className="absolute inset-0 z-0" />
       {/* Container */}
-      <div className="bg-white w-full max-w-lg z-10 rounded-md px-8 py-8">
+      <div className="bg-white w-full max-w-lg z-10 rounded-md px-8 py-8 mx-8">
         <h2 className="text-3xl font-semibold">Follow my journey!</h2>
         <p className="text-neutral-500 text-lg mt-2">
           I send out a newsletter every month with my latest posts and updates.
